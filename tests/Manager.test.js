@@ -1,6 +1,6 @@
 const Manager = require('../lib/manager')
 
-const manager = new Manager(123)
+const manager = new Manager('John', 1, 'john@gmail.com', 123)
 
 describe('Manager Class', () => {
     it('Can set office number via constructor', () => {

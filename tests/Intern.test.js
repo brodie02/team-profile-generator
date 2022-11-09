@@ -1,6 +1,6 @@
 const Intern = require('../lib/intern')
 
-const intern = new Intern('Flinders')
+const intern = new Intern('John', 1, 'john@gmail.com', 'Flinders')
 
 describe('Intern Class', () => {
     it('Can set school via constructor', () => {

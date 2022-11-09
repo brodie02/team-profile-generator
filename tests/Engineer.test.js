@@ -1,6 +1,6 @@
 const Engineer = require('../lib/engineer')
 
-const engineer = new Engineer('john01')
+const engineer = new Engineer('John', 1, 'john@gmail.com', 'john01')
 
 describe('Engineer Class', () => {
     it('Can set GitHub username via constructor', () => {

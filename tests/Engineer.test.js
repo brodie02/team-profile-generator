@@ -12,6 +12,6 @@ describe('Engineer Class', () => {
     });
 
     it('getRole() should return "Engineer"', () => {
-        expect(employee.getRole()).toEqual('Engineer')
+        expect(engineer.getRole()).toEqual('Engineer')
     });
 });

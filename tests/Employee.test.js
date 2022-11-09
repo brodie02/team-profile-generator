@@ -8,7 +8,7 @@ describe('Employee Class', () => {
     });
 
     it('Can set id via constructor arguments', () => {
-        expect(employee.id).toEqual('John')
+        expect(employee.id).toEqual(1)
     });
 
     it('Can set email via constructor arguments', () => {
@@ -19,12 +19,12 @@ describe('Employee Class', () => {
         expect(employee.getName()).toEqual('John')
     });
 
-    it('Can get name via getId()', () => {
+    it('Can get ID via getId()', () => {
         expect(employee.getId()).toEqual(1)
     });
 
-    it('Can get name via getEmail()', () => {
-        expect(employee.getName()).toEqual('john@gmail.com')
+    it('Can get email via getEmail()', () => {
+        expect(employee.getEmail()).toEqual('john@gmail.com')
     });
 
     it('getRole() should return "Employee"', () => {

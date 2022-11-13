@@ -7,31 +7,21 @@ function createHtml(managerCard, engineerCards, internCards) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Team</title>
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     </head>
     <body>
         <header>
             <h1>My Team</h1>
         </header>
         <main>
-            <div class="manager">
-                <div class="manager-card">
-                    <h2>Manager</h2>
-                    ${managerCard}
-                </div>
+            <div class="manager-class">
+                ${managerCard}
             </div>
-            <div class="employees">
-                <div class="engineers">
-                    <h2>Engineers</h2>
-                    <div class="engineer-cards">
-                        ${engineerCards}
-                    </div>
-                </div>
-                <div class="interns">
-                    <h2>Interns</h2>
-                    <div class="intern-cards">
-                        ${internCards}
-                    </div>
-                </div>
+            <div class="engineer-class">
+                ${engineerCards}
+            </div>
+            <div class="intern-class">
+                ${internCards}
             </div>
         </main>
     </body>

@@ -6,6 +6,9 @@ const Manager = require("./lib/Manager")
 const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 
+const { createManagerCard, createEngineerCards, createInternCards } = require("./dist/js/card") 
+const createHtml = require("./dist/js/html")
+
 inquirer.prompt([
     {
         type: 'input',
@@ -91,7 +94,7 @@ inquirer.prompt([
     const html = createHtml(managerCard, engineerCards, internCards)
 
 
-    fs.writeFile('index.html', html, (err) =>
+    fs.writeFile('dist/index.html', html, (err) =>
         err ? console.error(err) : console.log('Success!')
     );
 })

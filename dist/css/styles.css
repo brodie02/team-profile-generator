@@ -6,3 +6,19 @@ header {
     color: white;
     padding: 20px;
 }
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-body {
+    background-color: rgb(9, 144, 255);
+    color: white;
+}

@@ -72,7 +72,7 @@ inquirer.prompt([
     } 
 ])
 .then((data) => {
-    const manager = new Manager(data.name, data.id, data.email, data.officeNum)
+    const manager = new Manager(data.name, data.id, data.email, data.office)
     const employees = data.employees
     const engineers = []
     const interns = []
